@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The University of York
+ * Copyright (C) 2020 Red Raven Patricia Ryser-Welch
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.YorkUniversity.coffee2Season;
+package org.Red.Raven.JupiterAndSaturn;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -70,10 +70,13 @@ public class DirectConnection implements RConnection
         }
      
               
-       System.out.println("RScript executable :  " + r_script_executable.getAbsolutePathAndName() );
+       System.out.println("RScript executable :  " + 
+                          r_script_executable.getAbsolutePathAndName());
+       
        if (!r_script_executable.doesFileExists())
        {
-           System.out.println("RScript executable :  " + r_script_executable.getAbsolutePathAndName() );
+           System.out.println("RScript executable :  " + 
+                               r_script_executable.getAbsolutePathAndName() );
             throw new RConnectionException(10);
        }
     }
@@ -121,7 +124,8 @@ public class DirectConnection implements RConnection
      * @throws IOException - when the problem occurs when reading the R script
      * @throws InterruptedException  - when problem occurs during the execution of the script
      */
-    protected void evaluateRScript(FileTools aScript) throws RConnectionException, IOException, InterruptedException {
+    protected void evaluateRScript(FileTools aScript) throws RConnectionException, IOException, InterruptedException 
+    {
         System.out.println("DirectConnection.evaluateRScript 1");
         System.out.println(aScript.toString());
         if (aScript.doesFileExists()) 
@@ -176,9 +180,5 @@ public class DirectConnection implements RConnection
     public String getPathToR()
     {
         return pathToR;
-    }
-    
-    
-
-    
+    } 
 }

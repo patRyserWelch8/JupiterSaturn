@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The University of York
+ * Copyright (C) 2020 Red Raven Patricia Ryser-Welch
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,8 @@
  * SOFTWARE.
  */
 
-package org.YorkUniversity.coffee2Season;
+
+package org.Red.Raven.JupiterAndSaturn;
 
 import java.io.File;
 import java.io.IOException;
